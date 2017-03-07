@@ -1,4 +1,3 @@
-
 drawPyramid(5);
 
 
@@ -36,5 +35,13 @@ function drawPyramid(height) {
         // create an element whose inner text is rowStr,
         // and insert it as a child of the container <div id="pyramid">
 
+        // var pyramid = document.getElementById('pyramid');
+        // pyramid.innerHTML += "<p>" + rowStr;
+        // document.body.appendChild(pyramid);
+        //
+        var pyr = document.createElement("p")
+        var rowPyr = document.createTextNode(rowStr)
+        pyr.appendChild(rowPyr)
+        document.getElementById("pyramid").appendChild(pyr)
     }
 }
